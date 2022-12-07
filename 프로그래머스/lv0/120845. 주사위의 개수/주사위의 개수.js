@@ -4,5 +4,5 @@ function solution(box, n) {
     // 주사위가 최대로 들어가려면
     // 각 변을 주사위 모서리로 나눈 것의 몫을 다 곱하면 됨.
     
-    return box.map(ele => parseInt(ele / n)).reduce((acc, cur) => acc * cur, 1)
+    return box.map(ele => parseInt(ele / n)).reduce((acc, cur) => acc * cur)
 }
