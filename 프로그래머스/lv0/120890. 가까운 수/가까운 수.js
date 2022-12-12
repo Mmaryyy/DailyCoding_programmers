@@ -16,7 +16,6 @@ function solution(array, n) {
         } else if (gap === min) {
             closerNum = closerNum < array[i] ? closerNum : array[i]
         }
-        continue
     }
     return closerNum
 }
