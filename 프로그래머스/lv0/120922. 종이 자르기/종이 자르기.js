@@ -5,4 +5,5 @@ function solution(M, N) {
     // 가로 길이 * (세로 길이 - 1)
     
     return (M - 1) + M * (N - 1)
+     // ===> M*N-1 과 같다ㅠㅠ
 }
