@@ -14,9 +14,11 @@ function solution(A, B) {
                 let temp = B
                 // B 문자열 값 가져오기
                 const left = temp.slice(0,j)
-                // 
+                // j 인덱스를 기준으로 왼쪽 문자 잘라서
                 temp = temp.substring(j)+left
+                // 뒤에 다시 붙이기
                 if (A === temp) return (j-i)
+                // A와 B가 같으면 이동 수 리턴
             }
         }
     }
