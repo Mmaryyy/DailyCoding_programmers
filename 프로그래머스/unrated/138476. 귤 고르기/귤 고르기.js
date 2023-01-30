@@ -20,7 +20,7 @@ function solution(k, tangerine) {
             amount += num
             answer.push(size)
         }
-        else if (amount === k) break
+        else if (amount >= k) break
     }
     
 
