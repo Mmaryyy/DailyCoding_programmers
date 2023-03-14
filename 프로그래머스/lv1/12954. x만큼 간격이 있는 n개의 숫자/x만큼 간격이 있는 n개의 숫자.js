@@ -1,9 +1,3 @@
 function solution(x, n) {
-    var answer = [];
-    let ele = x
-    while (answer.length < n) {
-        answer.push(ele)
-        ele += x
-    }
-    return answer
+    return Array(n).fill(x).map((el, idx) => (idx + 1) * el)
 }
