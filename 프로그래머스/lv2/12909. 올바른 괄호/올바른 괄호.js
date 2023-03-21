@@ -1,15 +1,15 @@
 function solution(s){
-    let top = 0
+    let open  = 0
+    let close = 0
     
-    for (let bracket of s) {
-        if (bracket === '(') {
-            top++
+    for (let el of s) {
+        if (el === '(') {
+            open++
             continue
-        } else {
-            if (top === 0) return false
-            top--
+        } else if (el === ')') {
+            close++
         }
     }
-
-    return top === 0
+    
+    return open === close
 }
