@@ -1,5 +1,3 @@
 function solution(a, b) {
-    return a.map((el, idx) => {
-        return el * b[idx]
-    }).reduce((acc, cur) => acc + cur, 0)
+    return a.reduce((acc, cur, idx) => acc + cur * b[idx], 0)
 }
