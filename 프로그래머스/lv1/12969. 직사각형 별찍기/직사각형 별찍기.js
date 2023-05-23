@@ -5,8 +5,6 @@ process.stdin.on('data', data => {
     
     const row = '*'.repeat(a)
     
-    for (let i = 0; i < b; i++) {
-        console.log(row)
-    }
+    return console.log(`${row + '\n'}`.repeat(b))
 });
 
