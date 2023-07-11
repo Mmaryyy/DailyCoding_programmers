@@ -9,7 +9,7 @@ function solution(s, n) {
       }
       let isUpper = s[i] === s[i].toUpperCase()
       let originalIdx = isUpper ? alphabet.indexOf(s[i]) : alphabet.indexOf(s[i].toUpperCase())
-      let nextIdx = originalIdx + n > 25 ? originalIdx + n - 25 - 1 : originalIdx + n
+      let nextIdx = originalIdx + n >= alphabet.length ? originalIdx + n - alphabet.length : originalIdx + n
       if (isUpper) {
           result += alphabet[nextIdx]
       } else {
