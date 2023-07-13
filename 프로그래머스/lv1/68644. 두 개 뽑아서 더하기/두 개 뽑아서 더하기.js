@@ -9,10 +9,9 @@ function solution(numbers) {
     const rest = numbers.slice(idx + 1)
     rest.forEach((el) => {
       let sum = fixed + el
-      if (answer.indexOf(sum) > -1) return
       answer.push(sum)
     })
   })
 
-  return answer.sort((a, b) => a - b)
+  return [...new Set(answer)].sort((a, b) => a - b)
 }
